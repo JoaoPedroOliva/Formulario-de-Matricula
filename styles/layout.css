@@ -31,7 +31,6 @@ main {
 aside {
   background-color: var(--surface-secondary);
   padding: 4rem;
-
   & .aside-container {
     max-width: 31rem;
 
@@ -48,5 +47,29 @@ aside {
     & span {
       color: var(--text-highlight);
     }
+  }
+}
+
+@media (width < 80em) {
+  #app {
+    max-width: 23.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .flex {
+    display: grid;
+  }
+
+  aside {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100vh;
+    overflow: auto;
   }
 }

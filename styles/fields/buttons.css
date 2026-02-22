@@ -27,3 +27,25 @@ button {
     }
   }
 }
+
+@media (width < 80em) {
+  button {
+    &.btn-secondary {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box; /* evita estourar com padding/border */
+      margin-left: 0; /* remove o auto no mobile */
+      text-align: center;
+    }
+
+    &.btn-primary {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box; /* evita estourar com padding/border */
+      margin-left: 0; /* remove o auto no mobile */
+      text-align: center;
+    }
+  }
+}
